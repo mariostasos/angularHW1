@@ -1,0 +1,30 @@
+<html ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+
+	<!--<script src="js/lib/angular.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="js/controllers/app.js"></script>
+</head>
+<body>
+	<div class="container" ng-controller="AppCtrl">
+		<h1>Demo Angular</h1>
+
+		<ul class="list-group" ng-repeat="user in users">
+		<li class="list-group-item">
+			<a href="" ng-click="setUser(user.name)">
+				{{user.name}}
+			</a> - <a href="" ng-click="editUser(user.name)">Edit</a>
+		</li> 
+		</ul>
+
+
+		<div ng-include="details"></div>
+		<div ng-include="edit"></div>
+		<!-- 
+		<p ng-show="currentUser">Users: {{currentUser.name}}</p> -->
+	</div>
+</body>
+</html>
