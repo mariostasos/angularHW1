@@ -1,0 +1,1 @@
+angular.module('blogApp',['commentsModule', 'loginModule', 'postsModule']);

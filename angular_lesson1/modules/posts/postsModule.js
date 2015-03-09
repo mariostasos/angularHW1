@@ -1,0 +1,1 @@
+angular.module('postsModule',['blogApp.posts.controllers', 'blogApp.posts.directives']);
